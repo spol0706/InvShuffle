@@ -20,8 +20,12 @@ public class ShuffleCommands implements CommandExecutor, TabCompleter {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (args.length == 0) {
-            sender.sendMessage("§c사용법: /invshuffle <start|stop|reload>");
-            return false;
+            sender.sendMessage("§e========== §f[ InvShuffle 도움말 ] §e==========");
+            sender.sendMessage("§a/invshuffle start §7- 인벤토리 셔플을 시작합니다.");
+            sender.sendMessage("§a/invshuffle stop §7- 인벤토리 셔플을 중지합니다.");
+            sender.sendMessage("§a/invshuffle reload §7- 플러그인 설정을 새로고침합니다.");
+            sender.sendMessage("§e=======================================");
+            return true;
         }
 
         switch (args[0].toLowerCase()) {
