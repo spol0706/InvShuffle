@@ -1,0 +1,16 @@
+name: InvShuffle
+version: 1.0
+main: InvShuffle.invShuffle.InvShuffle
+api-version: 1.18
+author: SPOL
+description: Periodically shuffles player inventories.
+commands:
+  invshuffle:
+    description: Manages the InvShuffle plugin.
+    usage: /invshuffle <start|stop|reload>
+    aliases: [is]
+    permission: invshuffle.admin
+permissions:
+  invshuffle.admin:
+    description: Allows user to manage the InvShuffle plugin.
+    default: op

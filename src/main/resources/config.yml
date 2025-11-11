@@ -1,0 +1,5 @@
+# InvShuffle Plugin Configuration
+
+# The interval in minutes at which to shuffle player inventories.
+# Default: 5
+shuffle-interval-minutes: 5
